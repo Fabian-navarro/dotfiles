@@ -14,3 +14,5 @@ function git_ps1 {
 }
 
 PS1="${DIR_COLOR}\w$GIT_COLOR\$(git_ps1)\n${PROMPT_COLOR}> ${RESET_COLOR}"
+
+neofetch

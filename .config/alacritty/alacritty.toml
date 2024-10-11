@@ -1,0 +1,21 @@
+[colors.primary]
+background = "#252221"
+foreground = "#beae94"
+[font]
+size = 10.0
+
+[font.bold]
+family = "0xProto Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "0xProto Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "0xProto Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "0xProto Nerd Font Mono"
+style = "Regular"
