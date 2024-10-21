@@ -4,6 +4,7 @@ Currently configured for autocompletion, autoformatting and linting in:
 - C++
 - Python
 - Rust
+- Haskell
 
 # Credits
 

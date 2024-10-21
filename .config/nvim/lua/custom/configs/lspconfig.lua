@@ -18,3 +18,15 @@ lspconfig.pyright.setup ({
   capabilities = capabilities,
   filetypes = {"python"},
 })
+
+lspconfig.hls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"haskell", "lhaskell"},
+  root_dir = lspconfig.util.root_pattern("*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"),
+  settings = {
+    haskell = {
+      hlintOn = true,
+    },
+  },
+})

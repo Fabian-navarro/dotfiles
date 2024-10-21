@@ -25,7 +25,10 @@ local plugins = {
         "pyright",
         "mypy",
         "ruff",
-        "black"
+        "black",
+        "haskell-language-server",
+        "hlint",
+        "fourmolu"
       }
     }
   },

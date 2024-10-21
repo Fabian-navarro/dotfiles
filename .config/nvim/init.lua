@@ -22,3 +22,5 @@ require "plugins"
 
 
 vim.cmd("cnoreabbrev cr Cargo run")
+
+vim.opt.relativenumber = true
