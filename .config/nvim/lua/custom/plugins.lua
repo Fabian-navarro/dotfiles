@@ -68,6 +68,81 @@ local plugins = {
         ignore_install = { 'org' },
       })
     end,
+  },
+  {
+    'cameron-wags/rainbow_csv.nvim',
+    config = true,
+    ft = {
+        'csv',
+        'tsv',
+        'csv_semicolon',
+        'csv_whitespace',
+        'csv_pipe',
+        'rfc_csv',
+        'rfc_semicolon'
+    },
+    cmd = {
+        'RainbowDelim',
+        'RainbowDelimSimple',
+        'RainbowDelimQuoted',
+        'RainbowMultiDelim'
+    }
+  },
+  {
+    "jupyter-vim/jupyter-vim",
+    config = function()
+      vim.g.jupyter_mapkeys = 1  -- Enable default keymaps
+      vim.g.jupyter_default_mappings = 0
+    end
+  },
+  {
+    "gacallea/chuck-nvim",
+    version = "*",
+    dependencies = {
+      { "MunifTanjim/nui.nvim" },
+      { -- until https://github.com/gacallea/chuck-nvim/issues/3
+        "nvim-tree/nvim-web-devicons",
+        opts = {
+          override_by_extension = {
+            ["ck"] = {
+              icon = "󰧚",
+              color = "#80ff00",
+              name = "ChucK",
+            },
+          },
+        },
+      },
+    },
+    ft = { "chuck" },
+    opts = {
+      autorun = false,
+      layout = "chuck_on_top", -- or "chuck_on_top"
+      chuck_vm = {
+        log_level = 1,
+        srate = 48000,
+        bufsize = 512,
+        dac = 0,
+        adc = 0,
+        channels = 2,
+        input = 2,
+        output = 2,
+        remote = "127.0.0.1",
+        port = 8888,
+      },
+    }, -- see configuration
+    cmd = {
+      "ChuckLoop",
+      "ChuckStatus",
+      "ChuckTime",
+      "ChuckAddShred",
+      "ChuckRemoveShreds",
+      "ChuckReplaceShred",
+      "ChuckClearShreds",
+      "ChuckClearVM",
+      "ChuckExit",
+    },
+    keys = {
+    }
   }
 }
 return plugins

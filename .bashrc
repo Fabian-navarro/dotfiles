@@ -15,4 +15,10 @@ function git_ps1 {
 
 PS1="${DIR_COLOR}\w$GIT_COLOR\$(git_ps1)\n${PROMPT_COLOR}> ${RESET_COLOR}"
 
+export PATH="$HOME/opennlp/bin/:$PATH"
+
+alias nv='nvim'
+alias gs='git status'
+alias mm='xrandr --output eDP-1-1 --auto --primary'
+
 neofetch
