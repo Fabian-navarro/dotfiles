@@ -10,3 +10,5 @@ cd dotfiles
 
 stow --adopt .
 ```
+
+
